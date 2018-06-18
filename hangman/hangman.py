@@ -7,14 +7,11 @@ def takeBreak(sec):
 		time.sleep(1)
     
 def chooseWord():
-  """num = 0
-  file = open("words.txt", "r")
-  for line in file:
-    num = num + 1
-  word = file.readline(randint(0,num)):
-  """
-  
-	word = 'bagpipes'
+	num = 0
+	file = open("words.txt", "r")
+	num = file.readlines()
+	word = num[randint(0,len(num)-1)]
+	file.close()
 	return word
   
 def printFig(letters):
